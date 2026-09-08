@@ -1,49 +1,58 @@
 window.FORM_CONFIG = {
   "source": "redstring",
   "repo": "redstring_form",
-  "product": "redtwin",
-  "sourceForm": "redtwin.html",
-  "context": "red thread anniversary journey",
-  "motif": "∞",
-  "media": "7 foto kenangan + 1 file musik MP3",
-  "theme": "thread",
+  "product": "redstring",
+  "sourceForm": "redstring.html",
+  "context": "interactive red thread of fate anniversary narrative",
+  "motif": "🧶",
+  "media": "6 foto kenangan + 1 file musik MP3",
+  "theme": "wax",
+  "palette": [
+    "#8B1E22",
+    "#D94848",
+    "#1A1A1A",
+    "#FAF6EE",
+    "#E5D9C5",
+    "#2C1810"
+  ],
+  "price": 20000,
   "sections": [
     {
       "id": "02",
-      "title": "red string identity & dates",
+      "title": "core identity & anniversary milestone",
       "fields": [
         {
-          "key": "partner_name",
-          "label": "nama pasangan (yang dituju)",
-          "placeholder": "isi nama pasangan (yang dituju) sesuai pesanan",
+          "key": "recipient_name",
+          "label": "nama pasangan (crush / pacar)",
+          "placeholder": "default: Kania",
           "long": false,
           "required": false
         },
         {
           "key": "sender_name",
-          "label": "nama pengirim",
-          "placeholder": "isi nama pengirim sesuai pesanan",
+          "label": "nama kamu (pengirim)",
+          "placeholder": "default: Arkan",
           "long": false,
           "required": false
         },
         {
-          "key": "date_start",
-          "label": "tanggal jadian / awal mula",
-          "placeholder": "isi tanggal jadian / awal mula sesuai pesanan",
+          "key": "milestone_title",
+          "label": "judul perayaan / milestone",
+          "placeholder": "default: 3rd anniversary",
           "long": false,
           "required": false
         },
         {
-          "key": "date_anniv",
-          "label": "tanggal perayaan anniversary",
-          "placeholder": "isi tanggal perayaan anniversary sesuai pesanan",
+          "key": "anniversary_date",
+          "label": "tanggal jadian / perayaan",
+          "placeholder": "default: september 12, 2026",
           "long": false,
           "required": false
         },
         {
-          "key": "duration_text",
-          "label": "teks durasi hubungan",
-          "placeholder": "isi teks durasi hubungan sesuai pesanan",
+          "key": "telegram_destination",
+          "label": "link telegram tujuan pesan otomatis",
+          "placeholder": "default: https://t.me/mirssy",
           "long": false,
           "required": false
         }
@@ -51,19 +60,26 @@ window.FORM_CONFIG = {
     },
     {
       "id": "03",
-      "title": "step 0 — opening hero",
+      "title": "step 01 & 02 — the red string & first knot",
       "fields": [
         {
-          "key": "hero_title",
-          "label": "headline hero",
-          "placeholder": "isi headline hero sesuai pesanan",
+          "key": "step1_lead",
+          "label": "narasi step 1 (benang merah takdir)",
+          "placeholder": "default: they say an invisible red thread connects those who are destined to meet, regardless of time, place, or circumstance.",
+          "long": true,
+          "required": false
+        },
+        {
+          "key": "step2_knot_title",
+          "label": "judul step 2 (ikatan pertama)",
+          "placeholder": "default: the first knot we tied",
           "long": false,
           "required": false
         },
         {
-          "key": "hero_prose",
-          "label": "prosa benang merah pembuka",
-          "placeholder": "isi prosa benang merah pembuka sesuai pesanan",
+          "key": "step2_knot_story",
+          "label": "cerita awal mula bertemu & terikat",
+          "placeholder": "default: looking back, it wasn't just a coincidence. every conversation, every shared laugh was slowly pulling us closer.",
           "long": true,
           "required": false
         }
@@ -71,99 +87,112 @@ window.FORM_CONFIG = {
     },
     {
       "id": "04",
-      "title": "step 1 & 2 — the beginning & the decision",
+      "title": "step 03 & 04 — moments woven into string (photos & captions)",
       "fields": [
         {
-          "key": "step1_text",
-          "label": "cerita step 1 (saat dunia masih menunggu)",
-          "placeholder": "isi cerita step 1 (saat dunia masih menunggu) sesuai pesanan",
-          "long": true,
+          "key": "photo_1_cap",
+          "label": "foto 1 · caption (the spark)",
+          "placeholder": "default: the exact moment i knew you were the one.",
+          "long": false,
           "required": false
         },
         {
-          "key": "step2_text",
-          "label": "cerita step 2 (hari kamu mengiyakan)",
-          "placeholder": "isi cerita step 2 (hari kamu mengiyakan) sesuai pesanan",
-          "long": true,
+          "key": "photo_2_cap",
+          "label": "foto 2 · caption (quiet days)",
+          "placeholder": "default: everyday moments that feel extraordinary with you.",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "photo_3_cap",
+          "label": "foto 3 · caption (shared laughs)",
+          "placeholder": "default: laughing until our stomachs hurt over nothing.",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "photo_4_cap",
+          "label": "foto 4 · caption (holding on)",
+          "placeholder": "default: holding your hand through every gentle wave.",
+          "long": false,
           "required": false
         }
       ]
     },
     {
       "id": "05",
-      "title": "step 3 & 4 — memory stops & untangle knot",
+      "title": "step 05 & 06 — untangling the knot & 4 promises",
       "fields": [
         {
-          "key": "stop_1",
-          "label": "kenangan stop 1 (tap foto)",
-          "placeholder": "isi kenangan stop 1 (tap foto) sesuai pesanan",
+          "key": "knot_prompt",
+          "label": "instruksi interaksi tarik simpul benang",
+          "placeholder": "default: tap the knot to unravel our memories",
           "long": false,
           "required": false
         },
         {
-          "key": "stop_2",
-          "label": "kenangan stop 2 (tap foto)",
-          "placeholder": "isi kenangan stop 2 (tap foto) sesuai pesanan",
+          "key": "promise_1",
+          "label": "janji 1",
+          "placeholder": "default: to choose you, patiently and wholeheartedly, every single day.",
           "long": false,
           "required": false
         },
         {
-          "key": "knot_message",
-          "label": "pesan komitmen (sesudah untangle knot)",
-          "placeholder": "isi pesan komitmen (sesudah untangle knot) sesuai pesanan",
-          "long": true,
+          "key": "promise_2",
+          "label": "janji 2",
+          "placeholder": "default: to be your safest shelter whenever the world gets too loud.",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "promise_3",
+          "label": "janji 3",
+          "placeholder": "default: to hold your hand through every storm and celebrate every sunset.",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "promise_4",
+          "label": "janji 4",
+          "placeholder": "default: to keep weaving our beautiful story together, endlessly.",
+          "long": false,
           "required": false
         }
       ]
     },
     {
       "id": "06",
-      "title": "step 5 & 6 — milestone & tiny habits envelopes",
+      "title": "step 07 & 08 — the red string letter & final knot",
       "fields": [
         {
-          "key": "env_1",
-          "label": "amplop rahasia 1 (sleepy voice notes)",
-          "placeholder": "isi amplop rahasia 1 (sleepy voice notes) sesuai pesanan",
-          "long": true,
+          "key": "letter_greeting",
+          "label": "sapaan pembuka surat",
+          "placeholder": "default: my dearest kania,",
+          "long": false,
           "required": false
         },
         {
-          "key": "env_2",
-          "label": "amplop rahasia 2 (the way you look at me)",
-          "placeholder": "isi amplop rahasia 2 (the way you look at me) sesuai pesanan",
-          "long": true,
-          "required": false
-        }
-      ]
-    },
-    {
-      "id": "07",
-      "title": "step 7 & 8 — final anniversary letter",
-      "fields": [
-        {
           "key": "letter_body",
-          "label": "surat anniversary lengkap",
-          "placeholder": "isi surat anniversary lengkap sesuai pesanan",
+          "label": "isi lengkap surat cinta benang merah",
+          "placeholder": "default: three years ago, the universe gently tied our paths together. today, i look at you and see everything i've ever wanted and more. thank you for loving me so softly...",
           "long": true,
           "required": false
         },
         {
           "key": "letter_sign",
           "label": "tanda tangan surat",
-          "placeholder": "isi tanda tangan surat sesuai pesanan",
+          "placeholder": "default: forever yours, arkan",
+          "long": false,
+          "required": false
+        },
+        {
+          "key": "final_tagline",
+          "label": "pesan penutup website",
+          "placeholder": "default: no matter the distance, the string will never break.",
           "long": false,
           "required": false
         }
       ]
     }
-  ],
-  "palette": [
-    "#FF304F",
-    "#10131A",
-    "#F8F7F2",
-    "#EFECE3",
-    "#4A505C",
-    "#FFB7CA"
-  ],
-  "price": 20000
+  ]
 };
