@@ -52,7 +52,7 @@ window.FORM_CONFIG = {
         {
           "key": "telegram_destination",
           "label": "link telegram tujuan pesan otomatis",
-          "placeholder": "default: https://t.me/mirssy",
+          "placeholder": "default: https://t.me/reeumen",
           "long": false,
           "required": false
         }
